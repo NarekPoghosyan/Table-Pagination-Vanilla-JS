@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.container {
+    display: grid;
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-columns: repeat(10,1fr);
+}
+
+#table {
+    grid-column: 2/10;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#table tr {
+    height: 50px;
+}
+
+#table tr td {
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    color: rgb(99, 99, 99);
+}
+
+.boys {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sel {
+    font-size: 30px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#sel:hover {
+    -webkit-box-shadow: 0 0 10px rgb(0, 102, 255);
+    box-shadow: 0 0 10px rgb(0, 102, 255);
+}
+
+#quotes {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+}
+
+.head {
+    border: 1px solid rgb(231, 231, 231);
+    color: rgb(63, 63, 63);
+}
+
+.searchinput {
+    display: flex;
+    grid-column: 9/10;
+    margin-bottom: 20px;
+}
+
+.searchinput p {
+    margin-top: 25px;
+}
+
+.searchinput input {
+    margin-left: 8px;
+    color: rgb(107, 107, 107);
+    height: 25px;
+    width: 160px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.searchinput input:hover {
+    -webkit-box-shadow: 0 0 10px rgb(50, 132, 255);
+    box-shadow: 0 0 10px rgb(50, 132, 255);
+}
+
+#seasel {
+    font-size: auto;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#seasel:hover {
+    -webkit-box-shadow: 0 0 10px rgb(0, 102, 255);
+    box-shadow: 0 0 10px rgb(0, 102, 255);
+}
+
+.styleNewhr:hover {
+    -webkit-box-shadow: 0 0 10px rgb(50, 132, 255);
+    box-shadow: 0 0 10px rgb(50, 132, 255);
+}
+
+.buttons {
+    display: flex;
+    margin-top:  10px;
+    grid-column: 8/10;
+    grid-row: 3/4;
+}
+
+#page-numbers button {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#page-numbers button:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.buttons  #previous {
+    border-radius: 3px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons #next {
+    border-radius: 3px;
+    width: 60px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#page-numbers .active-page {
+    background-color: rgb(50, 132, 255);
+    color: white;
+    pointer-events: none;
+}
+
+.by {
+    margin-left: 10px;
+}

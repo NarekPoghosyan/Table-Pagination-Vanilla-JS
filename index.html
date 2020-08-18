@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <select id="sel">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+            <div class="searchinput">
+                <p>Search:</p>
+                <input  id="search" type="text">
+                <p class="by"> by </p>
+                <select onclick="takeRight(event)" id="seasel">
+                    <option value="name">Name</option>
+                    <option value="lastname">Lastname</option>
+                    <option value="telephone">Telephone</option>
+                    <option value="city">City</option>
+                </select>
+            </div>
+                <table id="table">
+                    <tr>
+                        <th class="head">Firstname</th>
+                        <th class="head">Lastname</th>
+                        <th class="head">Telephone</th>
+                        <th class="head">City</th>
+                      </tr>
+                </table>
+                <p id="quotes">Showing 1 to 10 of 20 entries</p>
+                <div class="buttons">
+                    <button id="previous">Previous</button>
+                    <div id="page-numbers"></div>
+                    <button  id="next">Next</button>
+                </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
